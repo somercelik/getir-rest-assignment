@@ -3,7 +3,8 @@ var mongoose = require('mongoose');
 const { DB_CONN_URI } = process.env;
 require('./record');
 
-const DB_URI = null;
+const DB_URI = DB_CONN_URI;
+
 
 if(DB_URI){
     mongoose.connect(DB_URI, 
