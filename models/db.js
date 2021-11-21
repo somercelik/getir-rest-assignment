@@ -5,12 +5,15 @@ require('./record');
 
 const DB_URI = DB_CONN_URI;
 
-mongoose.connect(DB_URI, 
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    }
-);
+if(DB_URI){
+    mongoose.connect(DB_URI, 
+        {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        }
+    );
+}
+
 
 mongoose.connection.on('connected', () => {
     //console.log("Connected the database located at " + DB_URI);
