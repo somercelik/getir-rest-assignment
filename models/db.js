@@ -5,8 +5,8 @@ require('./record');
 
 const DB_URI = null;
 
-if (DB_URI) {
-    mongoose.connect(DB_URI,
+if(DB_URI){
+    mongoose.connect(DB_URI, 
         {
             useNewUrlParser: true,
             useUnifiedTopology: true
