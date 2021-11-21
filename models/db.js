@@ -1,16 +1,19 @@
 // Database setup module
 var mongoose = require('mongoose');
-const {DB_CONN_URI} = process.env;
+const { DB_CONN_URI } = process.env;
 require('./record');
 
-const DB_URI = DB_CONN_URI;
+const DB_URI = null;
 
-mongoose.connect(DB_URI, 
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    }
-);
+if (DB_URI) {
+    mongoose.connect(DB_URI,
+        {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        }
+    );
+}
+
 
 mongoose.connection.on('connected', () => {
     //console.log("Connected the database located at " + DB_URI);
