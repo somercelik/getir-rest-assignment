@@ -31,3 +31,6 @@ Before starting the server, you will need the .env file that includes the databa
 After this step, the environment should be ready to execute the following command and run the server:
 
 ```npm start```
+
+I have created 14 test cases for this project, If you want to test it yourself, feel free to run ```npm test``` command.
+Test cases are located in ```app.test.js``` file.
