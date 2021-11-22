@@ -16,7 +16,7 @@ const {
 const buildCollectionQuery = (filter) => {
     let retFilter = {};
     let fields = Object.keys(filter);
-    let validationMsg, validationErrorCode;
+    let validationMsg;
     // We got the parameter names, we're gonna use them for acquiring the Datatype, to query the data
     for (let i = 0; i < fields.length; i++) {
         let key = fields[i];
@@ -50,7 +50,6 @@ const buildCollectionQuery = (filter) => {
     }
     return {
         retFilter: retFilter,
-        validationErrorCode: validationErrorCode,
         validationMsg: validationMsg
     };
 };
