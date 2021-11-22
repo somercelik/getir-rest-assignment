@@ -34,3 +34,6 @@ After this step, the environment should be ready to execute the following comman
 
 I have created 14 test cases for this project, If you want to test it yourself, feel free to run ```npm test``` command.
 Test cases are located in ```app.test.js``` file.
+
+
+It took 3 hours to code, 45 minutes to test and 30 minutes to documentate the project.
